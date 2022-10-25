@@ -20,8 +20,8 @@ int main()
 
 		for (int i = 0; i < 10; i++)
 		{
-			x = 6. * rand() / RAND_MAX - 3;
-			y = 6. * rand() / RAND_MAX - 3;
+			x = 6. * rand() / RAND_MAX - R;
+			y = 6. * rand() / RAND_MAX - R;
 			if (x + x + y * y <= R * R && y >= 0 || y >= -R && y <= x && x >= -R && x <= 0)
 				cout << setw(8) << setprecision(4) << x << " "
 				<< setw(8) << setprecision(4) << y << " " << "yes" << endl;
